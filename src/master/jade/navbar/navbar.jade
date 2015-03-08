@@ -1,0 +1,32 @@
+nav.red.lighten-3
+  .nav-wrapper
+    a.brand-logo.center(href='#').waves-effect.waves-light SmartShop'
+      |     
+      ul#nav-mobile.right.hide-on-med-and-down
+        li
+          a(href='#').waves-effect.waves-light.z-depth-1 Contact
+      a#nav-mobile.left.hide-on-large-only.dropdown-button(href="#!" data-activates="dropdown1")
+        i.mdi-navigation-arrow-drop-down.left
+
+ul#dropdown1.dropdown-content
+    li
+      a(href='#').waves-effect.waves-light Contact
+
+script(type='text/javascript').
+  $(".dropdown-button").dropdown();
+
+      //- ul#nav-mobile.right.hide-on-large-only
+        //- li
+          //- a(href='#').waves-effect.waves-light.z-depth-1 test
+
+
+  //- <nav>
+  //-   <div class="nav-wrapper">
+  //-     <a href="#" class="brand-logo center">Logo</a>
+  //-     <ul id="nav-mobile" class="left hide-on-med-and-down">
+  //-       <li><a href="sass.html">Sass</a></li>
+  //-       <li><a href="components.html">Components</a></li>
+  //-       <li><a href="javascript.html">JavaScript</a></li>
+  //-     </ul>
+  //-   </div>
+  //- </nav>
