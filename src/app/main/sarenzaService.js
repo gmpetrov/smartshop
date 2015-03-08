@@ -29,14 +29,17 @@ angular.module('SmartShop')
 					else
 						price = 42;
 
-					if ('img_content_image/_alt' in el)
-						var imgLink = el['img_content_image/_alt'];
+
+					if ('img_content_image' in el)
+						var imgLink = el['img_content_image'];
 					else if ('imagebox_image' in el)
 						var imgLink = el['imagebox_image']
 					else if ('image_1' in el)
 						var imgLink = el['image_1']
 					else if ('new_image' in el)
 						var imgLink = el['new_image'];
+					else if ('img_content_image' in el)
+						var imgLink = el['img_content_image'];
 					else
 						var imgLink = 'flute';
 
@@ -61,7 +64,6 @@ angular.module('SmartShop')
 						'is_asos' : false
 					};
 					$scope.tmp.push(obj);
-					// return $scope.tmp;
 				});
 			})
 			.error(function(){

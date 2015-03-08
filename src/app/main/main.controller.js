@@ -52,10 +52,6 @@ angular.module('SmartShop')
 			$scope.is_submitted = true;
 			$scope.zalando_res = null;
 
-			// zalando.get($scope);
-			// sarenza.get($scope);
-			// asos.get($scope);
-
 			$q.all([
 				$q.when(zalando.get($scope)),
 				$q.when(sarenza.get($scope)),
