@@ -10,7 +10,7 @@ angular.module('SmartShop')
             }
         };
     })
-	.controller('MainCtrl', function ($scope, $q, $http, toaster, zalando, asos, sarenza) {
+	.controller('MainCtrl', function ($scope, $q, $http, toaster, zalando, asos, sarenza, shoes) {
 
 		$scope.is_loaded = false;
 		$scope.is_submitted = false;
@@ -55,7 +55,8 @@ angular.module('SmartShop')
 			$q.all([
 				$q.when(zalando.get($scope)),
 				$q.when(sarenza.get($scope)),
-				$q.when(asos.get($scope))
+				$q.when(asos.get($scope)),
+				$q.when(shoes.get($scope))
 			])
 			.then(function(data){
 				console.log('flute');

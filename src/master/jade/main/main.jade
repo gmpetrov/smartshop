@@ -5,14 +5,9 @@ div.container.teal.lighten-2
       div.animated.fadeInUp
         h1.center-align  The smart way to shop
 
-    //- .my_card.z-depth-2
-    //-   .my_card_img
-    //-     img(src="http://images.asos-media.com/inv/media/8/5/4/7/5047458/black/image1xl.jpg", data-caption="cool").materialboxed
-    //-   a(style="width: 100%;", href="#", target="blanck").z-depth-4
-    //-     .my_card_content.card-action.red-text.waves-effect.waves-light.white-text
-    //-       p BUY 30 E
-
-  //- div.container(style="margin-top: 5%;")
+  //- div.container.brands
+  //-   img(src="assets/images/sarenza.png", style="width: 216px; height: auto;")
+  //-   img(src="assets/images/asos.png", style="width: 216px; height: auto; margin-bottom: -19px;")
   .row(style="margin-top: 5%;")
     .col.s6
       select(id="select_sex").animated.fadeInLeft.browser-default
@@ -57,6 +52,7 @@ div.container.teal.lighten-2
           img(ng-src="{{ res.imagebox_image }}", data-caption="{{ res['imagebox_image/_alt'] }}", style="height: 350px; width: auto; margin-top: -127px", ng-if="res.from === 'asos'")
           img(ng-src="{{ res.imagebox_image }}", data-caption="{{ res['imagebox_image/_alt'] }}", style="height: 350px; width: auto;  margin-top: -64px; ", ng-if="res.from === 'zalando'")
           img(ng-src="{{ res.imagebox_image }}", data-caption="{{ res['imagebox_image/_alt'] }}", style="height: 127px; width: auto;  margin-top: 47px; ", ng-if="res.from === 'sarenza'")
+          img(ng-src="{{ res.imagebox_image }}", data-caption="{{ res['imagebox_image/_alt'] }}", style="height: 200px; width: auto;  margin-top: 14px; ", ng-if="res.from === 'shoes'")
         .card-content.teal.lighten-3.white-text(style="background: #fff;")
           .card-title
             p.truncate {{ res['imagebox_image/_alt'] }}
