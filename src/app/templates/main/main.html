@@ -53,7 +53,7 @@
   <div style="margin-top: 50px;" class="row">
     <div ng-repeat="res in zalando_res" ng-show="is_loaded" style="width: 297px;" on-last-repeat="on-last-repeat" class="col s1 m4 animated fadeInUp">
       <div class="card teal lighten-3">
-        <div style="background: #fff; height: 221px; overflow: hidden;" ng-class="{'asos': true}" class="card-image center-align z-depth-1"><img ng-src="{{ res.imagebox_image }}" data-caption="{{ res['imagebox_image/_alt'] }}" style="height: 350px; width: auto;" class="materialboxed is_asos"/></div>
+        <div style="background: #fff; height: 221px; overflow: hidden;" ng-class="{'asos': true}" class="card-image center-align z-depth-1"><img ng-src="{{ res.imagebox_image }}" data-caption="{{ res['imagebox_image/_alt'] }}" style="height: 350px; width: auto;" class="materialboxed"/></div>
         <div style="background: #fff;" class="card-content teal lighten-3 white-text">
           <div class="card-title">
             <p class="truncate">{{ res['imagebox_image/_alt'] }}</p>
