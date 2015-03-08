@@ -41,7 +41,7 @@ gulp.task('wiredep', function(){
 
 gulp.task('watch', function(){
 	gulp.watch('./src/app/index.scss', ['sass']);
-	gulp.watch('./src/**/*.js', ['jshint']);
+	gulp.watch('./src/**/*.js', ['jshint', 'inject']);
 	gulp.watch('./src/master/jade/**/*.jade', ['jade']);
 	gulp.watch('./bower_components/**/*', ['wiredep']);
 });
