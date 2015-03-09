@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 var $ = require('gulp-load-plugins')();
+var wiredep = require('wiredep').stream;
 
 gulp.paths = {
 	src: 'src',
@@ -34,7 +35,7 @@ gulp.task('jshint', function(){
 
 gulp.task('wiredep', function(){
 	return	gulp.src('./src/index.html')
-			.pipe($.wiredep())
+			.pipe(wiredep())
 			.pipe(gulp.dest('./src/'));
 });
 
