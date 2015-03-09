@@ -5,7 +5,7 @@ angular.module('SmartShop')
 			if ($scope.select_sex == 'femme')
 				var asos_url = 'http://www.asos.fr/Femme-Chaussures/qt0ml/?cid=4172#parentID=-1&pge=0&pgeSize=36&sort=3';
 			else
-				var asos_url = 'http://www.asos.fr/Homme-Chaussures-bottes-baskets/x0bk0/?cid=4209#parentID=-1&pge=0&pgeSize=36&sort=3';
+				var asos_url = 'http://www.asos.fr/homme-chaussures-bottes-baskets/x0bk0/?cid=4209&via=top#state=Rf-300%3D2323&parentID=-1&pge=0&pgeSize=36&sort=3';
 			var magic_url = 'https://api.import.io/store/data/_magic';
 			return $http.post(magic_url, {
 				apiVersionGuid: null,
